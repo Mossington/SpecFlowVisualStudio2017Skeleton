@@ -68,18 +68,56 @@ namespace SpecFlowVS2017Skeleton.SpecFlow.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Can navigate to the Act Consultancy Website", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Can navigate to the Act Consultancy Website via Google Chrome", new string[] {
                 "Test"}, SourceLine=6)]
-        public virtual void CanNavigateToTheActConsultancyWebsite()
+        public virtual void CanNavigateToTheActConsultancyWebsiteViaGoogleChrome()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can navigate to the Act Consultancy Website", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can navigate to the Act Consultancy Website via Google Chrome", null, new string[] {
                         "Test"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 8
- testRunner.Given("I inpuf the Cat Consultancy url in to google chrome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I input the Aat Consultancy url in to google chrome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
+ testRunner.Then("i am on the Act Consultancy webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Can navigate to the Act Consultancy Website via Firefox", new string[] {
+                "Test",
+                "Firefox"}, SourceLine=11)]
+        public virtual void CanNavigateToTheActConsultancyWebsiteViaFirefox()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can navigate to the Act Consultancy Website via Firefox", null, new string[] {
+                        "Test",
+                        "Firefox"});
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 13
+ testRunner.Given("I input the Aat Consultancy url in to FireFox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 14
+ testRunner.Then("i am on the Act Consultancy webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Can navigate to the Act Consultancy Website via Internet Explorer", new string[] {
+                "Test",
+                "InternetExplorer"}, SourceLine=16)]
+        public virtual void CanNavigateToTheActConsultancyWebsiteViaInternetExplorer()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Can navigate to the Act Consultancy Website via Internet Explorer", null, new string[] {
+                        "Test",
+                        "InternetExplorer"});
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 18
+ testRunner.Given("I input the Aat Consultancy url in to Internet Explorer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 19
  testRunner.Then("i am on the Act Consultancy webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
