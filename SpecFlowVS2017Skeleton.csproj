@@ -163,11 +163,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutomationFramework\DriverClass\Driver.cs" />
+    <Compile Include="AutomationFramework\Selenium\BaseElements\BaseElement.cs" />
+    <Compile Include="AutomationFramework\Selenium\ScreenAction\Button.cs" />
+    <Compile Include="AutomationFramework\Selenium\ScreenAction\TextField.cs" />
     <Compile Include="DebuggerShim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpecFlow\StepDefinitions\ExampleStepDefinition.cs" />
-    <Compile Include="SpecFlow\Support\Setup\Act.cs" />
-    <Compile Include="SpecFlow\Support\Setup\Driver.cs" />
+    <Compile Include="SpecFlow\Support\BaseStep\Act.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -185,6 +188,10 @@
   <ItemGroup>
     <Folder Include="SpecFlow\Support\Helpers\" />
     <Folder Include="SpecFlow\Support\Models\" />
+    <Folder Include="SpecFlow\Support\ObjectPattern\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IEDriverServer.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

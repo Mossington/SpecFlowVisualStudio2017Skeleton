@@ -2,13 +2,8 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SpecFlowVS2017Skeleton.SpecFlow.Support.Setup
+namespace SpecFlowVS2017Skeleton.AutomationFramework.DriverClass
 {
     public class Driver
     {

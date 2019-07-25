@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 using OpenQA.Selenium;
-using SpecFlowVS2017Skeleton.SpecFlow.Support.Setup;
+using SpecFlowVS2017Skeleton.SpecFlow.Support.BaseStep;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowVS2017Skeleton.SpecFlow.StepDefinitions

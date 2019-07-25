@@ -1,12 +1,13 @@
 ﻿using OpenQA.Selenium;
+using SpecFlowVS2017Skeleton.AutomationFramework.DriverClass;
 using System.Configuration;
 using System.Linq;
 using TechTalk.SpecFlow;
 
-namespace SpecFlowVS2017Skeleton.SpecFlow.Support.Setup
+namespace SpecFlowVS2017Skeleton.SpecFlow.Support.BaseStep
 {
     [Binding]
-    public sealed class Act
+    public static class Act
     {
         public static IWebDriver browserInstance;
 
@@ -18,11 +19,16 @@ namespace SpecFlowVS2017Skeleton.SpecFlow.Support.Setup
         {
             if (!ScenarioContext.Current.ScenarioInfo.Tags.Contains("no_browser"))
             {
-                if (ScenarioContext.Current.ScenarioInfo.Tags.Contains("Firefox")){
+                if (ScenarioContext.Current.ScenarioInfo.Tags.Contains("Firefox"))
+                {
                     browserInstance = Driver.InitializeFirefox();
-                }else if (ScenarioContext.Current.ScenarioInfo.Tags.Contains("InternetExplorer")){
+                }
+                else if (ScenarioContext.Current.ScenarioInfo.Tags.Contains("InternetExplorer"))
+                {
                     browserInstance = Driver.InitializeInternetExplorer();
-                }else{
+                }
+                else
+                {
                     browserInstance = Driver.InitializeChrome();
                 }
                 browserInstance.Navigate().GoToUrl(Specflow);
